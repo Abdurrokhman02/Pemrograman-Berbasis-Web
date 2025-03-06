@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar form</title>
+  </head>
+  <body style="border: 1px solid black; padding: 10px; width: 400px;">
+    <label
+      >Nama:
+      <input type="text" name="Name" placeholder="Masukkan nama anda" /><br
+    /></label>
+    Email:
+    <input type="text" name="Email" placeholder="Masukkan email anda" /><br />
+
+    <label
+      >Jenis Kelamin:<input type="radio" name="gender" value="male" /> Laki -
+      laki</label
+    >
+    <label><input type="radio" name="gender" value="female" /> Perempuan</label
+    ><br />
+
+    <label for="Hobi"
+      >Hobi: <input type="checkbox" name="hobi" value="Musik" />Musik
+      <input type="checkbox" name="hobi" value="Olahraga" />Musik</label
+    ><br>
+
+    <label for="kota">Kota:</label>
+    <select name="kota">
+      <option value="1">Jakarta</option>
+      <option value="2">Bandung</option>
+      <option value="3">Karawang</option>
+      <option value="4">Indramayu</option>
+    </select><br>
+
+    <label for="Upload">Upload Foto:
+        <input type="file" id="file">
+    </label><br>
+    
+    <button type="submit" value="Daftar" style="margin-bottom: 20px;">Daftar</button>
+  </body>
+</html>
