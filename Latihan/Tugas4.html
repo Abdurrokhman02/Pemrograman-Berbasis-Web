@@ -1,15 +1,15 @@
 <html>
     <head>
         <title>Website Sederhana</title>
-        <link rel="stylesheet" href="style4.css">
+        <link rel="stylesheet" href="style4.css"> <!-- Menghubungkan dengan file CSS eksternal -->
     </head>
     <body>
         <header>
-            <h1>Selamat Datang di Website Sederhana</h1>
+            <h1>Selamat Datang di Website Sederhana</h1> <!-- Judul utama halaman -->
         </header>
         <nav>
             <ul>
-            <li><a href="#">Beranda</a></li>
+                <li><a href="#">Beranda</a></li>
                 <li><a href="#">Tentang</a></li>
                 <li><a href="#">Layanan</a></li>
                 <li><a href="#">Kontak</a></li>
@@ -18,22 +18,25 @@
 
         <div class="container">
             <section class="content">
-                <h2>Fomulir Pendaftaran</h2>
+                <h2>Fomulir Pendaftaran</h2> <!-- Formulir untuk pengguna mendaftar -->
                 <p>Silahkan isi formulir di bawah ini untuk mendaftar.</p>
 
                 <form class="formulir">
                     <label>Nama Lengkap:</label>
-                    <input type="text" name="Nama Lengkap">
+                    <input type="text" name="Nama Lengkap"> <!-- Input untuk nama lengkap -->
+                    
                     <label>Email:</label>
-                    <input type="text" name="Email">
+                    <input type="text" name="Email"> <!-- Input untuk email -->
+                    
                     <label>Password:</label>
-                    <input type="text" name="Password">
+                    <input type="text" name="Password"> <!-- Input untuk password -->
+                    
                     <label>Jenis Kelamin:</label>
     
                     <div class="radio-group">
                         <div class="radio-item">
                             <label for="Laki-laki">Laki - laki</label>
-                            <input type="radio" name="Jenis Kelamin" id="Laki-laki" value="Laki-laki">
+                            <input type="radio" name="Jenis Kelamin" id="Laki-laki" value="Laki-laki"> <!-- Pilihan jenis kelamin -->
                         </div>
                         <div class="radio-item">
                             <label for="Perempuan">Perempuan</label>
@@ -42,12 +45,10 @@
                     </div> <hr>
     
                     <label>Hobi:</label>
-                   
-                   
                 <div class="checkbox-group">
                     <div class="checkbox-item">
                         <label for="Musik">Musik</label>
-                        <input type="checkbox" name="Hobi" id="Musik" value="Musik">
+                        <input type="checkbox" name="Hobi" id="Musik" value="Musik"> <!-- Checkbox untuk hobi -->
                     </div>
                     <div class="checkbox-item">
                         <label for="Olahraga">Olahraga</label>
@@ -60,18 +61,18 @@
                 </div> <hr>
     
                     <label>Pilih Kota:</label>
-                    <select name="Kota">
+                    <select name="Kota"> <!-- Dropdown untuk memilih kota -->
                         <option value="Jakarta">Jakarta</option>
                         <option value="Bogor">Bogor</option>
                         <option value="Karawang">Karawang</option>
                         <option value="Indramayu">Indramayu</option>
                         <option value="Cirebon">Cirebon</option>
                     </select>
-    
+                    
                     <label>Pesan Tambahan:</label>
-                    <input class="pesan" type="text" name="Pesan" placeholder="Tulis pesan di sini...">
+                    <textarea class="pesan" name="pesan" placeholder="Tulis pesan di sini..."></textarea> <!-- Textarea untuk pesan tambahan -->
     
-                    <button type="submit" value="Daftar">Kirim</button>
+                    <button type="submit" value="Daftar">Kirim</button> <!-- Tombol submit -->
                 </form>
             </section>
             <aside class="sidebar">

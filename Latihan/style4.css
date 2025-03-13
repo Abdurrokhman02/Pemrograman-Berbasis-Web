@@ -83,7 +83,7 @@ footer {
 input[type="text"], 
 input[type="email"], 
 input[type="password"], 
-select, 
+select,
 textarea {
     width: 100%;
     padding: 10px;
@@ -93,16 +93,9 @@ textarea {
     font-size: 14px;
 }
 
-textarea {
-    height: px;
-    resize: none;
-}
-
-
 .radio-group label, .checkbox-group label {
     display: flex;
     align-items: center;
-    gap: 10px;
     font-weight: normal;
     cursor: pointer;
 }
@@ -110,34 +103,32 @@ textarea {
 .radio-group, .checkbox-group {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .radio-item, .checkbox-item {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .radio-item input, .checkbox-item input {
     width: 18px;
     height: 18px;
-    margin: 0; /* Menghapus margin yang bisa menyebabkan geseran */
-    position: relative; /* Pastikan tidak absolute */
+    margin: 0;
+    position: relative; 
 }
 
 .radio-item label, .checkbox-item label {
-    cursor: pointer;
-    flex-grow: 1;
-    margin-right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
 }
 
-/* Tambahkan efek untuk radio button */
+
 .radio-item input::before {
-    content: "";
     width: 10px;
     height: 10px;
-    background-color: #333; /* Warna centang */
+    background-color: #333; 
     border-radius: 50%;
     opacity: 0;
     transition: 0.2s;
@@ -147,9 +138,8 @@ textarea {
     opacity: 1;
 }
 
-/* Untuk checkbox, ubah bentuknya */
 .checkbox-item input {
-    border-radius: 4px; /* Beda dengan radio */
+    border-radius: 4px; 
 }
 
 .checkbox-item input::before {
@@ -164,6 +154,14 @@ textarea {
     opacity: 1;
 }
 
+.text input {
+    height: 50px;
+    width: 100px;
+}
+
+.pesan{
+    height: 100px;
+}
 
 button {
     background-color: #007bff;
