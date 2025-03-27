@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Nilai Mutu</title>
+</head>
+<body>
+    <h1>Pengecekkan Nilai Mutu</h1>
+
+    <!-- Input untuk memasukkan NIM -->
+    <div style="padding-bottom: 10px;">
+        <label>Masukkan NIM:
+            <input type="number" id="NIM">
+        </label>
+    </div>
+
+    <!-- Input untuk memasukkan nilai dan tombol untuk mengecek nilai mutu -->
+    <div>
+        <label> Masukkan Nilai:
+            <input type="number" id="nilai">
+        </label>
+        <button onclick="cek()">Cek Nilai</button>
+    </div>
+
+    <!-- Menampilkan hasil nilai mutu -->
+    <p>Nilai Mutu: <span id="Mutu"></span></p>
+
+    <script>
+        function cek(){
+            // Mengambil nilai dari input dan mengonversinya ke angka
+            let nilai = parseInt(document.getElementById("nilai").value);
+            let nilaiMutu = "";
+
+            // Validasi input: Jika nilai lebih dari 100, tampilkan peringatan
+            if (nilai >= 100){
+                alert("Nilai tidak valid");
+            }
+
+            // Menentukan nilai mutu berdasarkan rentang nilai
+            if (nilai >= 80 && nilai <= 100) {
+                nilaiMutu = "A";
+            } else if (nilai >= 70 && nilai <= 79) {
+                nilaiMutu = "B";
+            } else if (nilai >= 60 && nilai <= 69) {
+                nilaiMutu = "C";
+            } else if (nilai >= 50 && nilai <= 59) {
+                nilaiMutu = "D";
+            } else if (nilai >= 0 && nilai <= 49){
+                nilaiMutu = "E";
+            }
+
+            // Menampilkan hasil konversi nilai mutu di elemen HTML
+            document.getElementById("Mutu").innerText = nilaiMutu;
+        }
+    </script>
+</body>
+</html>
