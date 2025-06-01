@@ -11,8 +11,9 @@
         <a href="?page=kendaraan">Kendaraan</a> |
         <a href="?page=genap">Genap</a> |
         <a href="?page=hewan">Hewan</a> |
-        <a href="?page=GG">Ganjil Genap</a>
-        <a href="?page=latihan_nilai">Latihan Nilai</a>
+        <a href="?page=GG">Ganjil Genap</a> |
+        <a href="?page=latihan_nilai">Latihan Nilai</a> |
+        <a href="?UKT">Diskon UKT</a>
     </nav>
 
     <hr>
